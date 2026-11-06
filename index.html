@@ -46,10 +46,20 @@
     .hacked-text { 
       font-size: 2.2rem; 
       font-weight: bold; 
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       animation: blink 1.2s infinite;
       color: #ffffff;
     }
+    
+    /* Added style for your custom text */
+    .custom-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ff2b2b;
+      text-shadow: 0 0 10px rgba(255, 43, 43, 0.5);
+    }
+
     @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
     #info-block { 
@@ -67,7 +77,10 @@
     #info-block span { display: block; border-bottom: 1px solid #222; margin-bottom: 5px; padding-bottom: 5px; }
     .small-note { font-size: 0.7rem; color: #555; margin-top: 15px; letter-spacing: 2px; }
 
-    @media (max-width: 600px) { .hacked-text { font-size: 1.3rem; } }
+    @media (max-width: 600px) { 
+      .hacked-text { font-size: 1.3rem; } 
+      .custom-text { font-size: 1rem; }
+    }
   </style>
 </head>
 <body>
@@ -80,6 +93,9 @@
     </div>
     
     <div class="hacked-text">YOU GOT FUCKED By Mr.Bombastic</div>
+    
+    <!-- YOUR CUSTOM TEXT ADDED HERE -->
+    <div class="custom-text">بسبب ايدي 2006 و 28 انا بنيك كس ام السيرفر</div>
     
     <div id="info-block">
       <span id="ip">Requesting IP...</span>

